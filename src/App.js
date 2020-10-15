@@ -1,11 +1,24 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import App2 from './App2';
+import { Provider } from 'react-redux';
+import store from './app/store';
 
 function App() {
+  function nextpage() {
+    ReactDOM.render(
+      <Provider store={store}>
+        <App2/>
+      </Provider>,
+      document.getElementById('AppContainer')
+    );
+  }
   return (
     <div className="App">
+      <button onClick={nextpage}>Next Page</button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
