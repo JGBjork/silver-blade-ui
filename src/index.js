@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import AppHeader from './components/view/AppHeader';
 import Home from './Home';
-import Page from './components/container/Page';
-import { Provider } from 'react-redux';
+import { Page } from './components/container/Pager';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -16,7 +15,7 @@ ReactDOM.render(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Page>
+    <Page titleLess>
       <Home />
     </Page>
   </React.StrictMode>,

@@ -1,0 +1,18 @@
+#appHeader div {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text-silver {
+  color: silver;
+}
+
+.text-turquoise {
+  color: turquoise;
+}
+
+.text-bold {
+  font-weight: bold;
+  font-size: 24px;
+}
