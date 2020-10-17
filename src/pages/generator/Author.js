@@ -28,7 +28,7 @@ export default () => {
                className="w-100"
                maxLength="165"
                value={author}
-               placeholder="e.g. Code Warrior (Edgar Firtzgerald)"
+               placeholder="e.g. Code Warrior (Edgar Fitzgerald)"
                onChange={e => dispatch(setAuthor(e.target.value))} />
       </div>
     </>
