@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Generator from './Generator';
 import Validator from './Validator';
 import Renewal from './Renewal';
+import Faq from './Faq';
 import LinkButton from './components/control/LinkButton';
 
 // Auxiliary functions
@@ -32,6 +33,15 @@ function launchRenewal() {
     document.getElementById('pager')
   );
 }
+
+function launchFaq() {
+  ReactDOM.render(
+    <React.StrictMode>
+      <Faq caption="FAQ" />
+    </React.StrictMode>,
+    document.getElementById('pager')
+  );
+}
 // Generator Pages
 export default function Abstract(props) {
   return (
@@ -53,6 +63,9 @@ export default function Abstract(props) {
           </LinkButton>
           <LinkButton onClick={launchRenewal}>
              ... renew a code seal
+          </LinkButton>
+          <LinkButton onClick={launchFaq}>
+             ... learn more about SilverBlade
           </LinkButton>
         </div>
     </div>
